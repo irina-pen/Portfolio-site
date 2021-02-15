@@ -32,16 +32,18 @@
 	<!-- For the header -->
 	<header>
 		<!-- For the navigation -->
-		<div class="section">
+		<div class="container">
+			<div class="logo">
 			<a href="index.html"><img src="img/logo_v1.svg" alt="Irina Malmouche"></a>
 			<nav>
-				<ul>
-					<li><a href="index.html">Work</a></li>
+				<ul class="navigation">
+					<li><a href="#projects">Work</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
+	</div>
 	</header>
 
 	<main>
@@ -53,10 +55,12 @@
 						<h1> About </h1>
 					</div>
 					<div class="column">
+						<div id="my-photo">
 						<picture>
 							<source srcset="img/photo-site@1x.jpg" media="(max-width:767px)">
 							<img src="img/photo-site@2x.jpg" alt="My Image">
 						</picture>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -72,7 +76,7 @@
 							After moving from my home country Kazakhstan to Japan and now to France, I understand values common to all humanity unifying and nurturing Kazakh tolerance, Japanese perfectionism and French style.
 						</p>
 						<div>
-							<a href="files/Malmouche-Irina-Resume.pdf" download>Download my CV</a>
+							<a href class="button"="files/Malmouche-Irina-Resume.pdf" download>Download my CV</a>
 						</div>
 
 					</div>
@@ -149,8 +153,9 @@
 				</ul>
 
 			</div>
-
+<div class="copyright">
 			<p>&copy;Irina Malmouche 2021</p>
+		</div>
 		</div>
 	</footer>
 </body>
