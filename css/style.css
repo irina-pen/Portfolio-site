@@ -8,33 +8,40 @@ body {
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
-  line-height: 1.6;
+  line-height: 1.5em;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #555657;
+  color: #4D4A4A;
 }
-
+.header-position {
+  text-align: center;
+}
 h1 {
-  color: #010C1A;
+  color: #010936;
 }
 
-h2, h3, h4 {
+h2,  h4 {
+  color: #121018;
+}
+h3 {
   color: #555657;
 }
-
 h1 {
   font-size: 2em;
   font-weight: 700;
   padding: 8px 0;
+
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 h4 {
@@ -46,6 +53,10 @@ h4 {
   font-size: 0.5em;
   font-weight: 400;
   display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 img {
@@ -70,16 +81,19 @@ a:active {
   color: #ff006e;
 }
 
+.button-position {
+  text-align: center;
+}
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #4100F7;
   color: #FCFFF1 !important;
   /* needed to override the default link color */
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   text-align: center;
-  padding: 17px 73px;
+  padding: 16px 73px;
   border-radius: 13px;
   transition: 0.2s background-color;
   box-shadow: 0px 6px 12px rgba(11, 1, 44, 0.28);
@@ -95,6 +109,8 @@ a:active {
 }
 .button.contact {
   background-color: #FEFDF9;
+  padding: 16px, 32px;
+  text-align: center;
   color: #4100F7 !important;
 }
 
@@ -105,26 +121,29 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
 .row {
-  margin: 24px 0;
+  margin: 8px 0;
   /* 25px top and bottom, 0 left and right */
 }
 
 #projects .row {
-  padding: 24px 0;
+  padding: 8px 0;
 }
 
 #hero h1 {
   text-align: left;
 }
 
-.logo {
-  max-width: 232px;
+.logo img {
+  padding: 15px 30px;
+  background: #ffffff;
 }
-
+.logo {
+  max-width: 200px;
+}
 header {
   background-color: #FBF8F4;
   display: block;
@@ -138,10 +157,12 @@ header {
 
 nav {
   width: 100%;
+  text-transform: uppercase;
 }
 
 nav>ul {
   list-style-type: none;
+  font-size: 14px;
   padding: 0;
   margin: 0;
 }
@@ -149,31 +170,37 @@ nav > ul > li {
   display: inline-block;
 }
 nav>ul>li>a {
-  list-style-type: none;
   text-decoration: none;
-  text-align: center;
-  width: 100%;
   padding: 0 8px;
   font-weight: 400;
-  color: #606D82;
-
+  color: #010936;
 }
 
 nav>ul>li>a:visited {
-  color: #606D82;
+  color: #010936;
 }
 nav>ul>li>a:hover {
   color: #606D82;
 }
 nav>ul>li>a:focus {
-  color: #010936;
+  color: #606D82;
   font-weight: bold;
 }
 nav>ul>li>a:active {
-  color: #010936;
+  color: #606D82;
 }
-
-
+.active {
+  color: #626E83 !important;
+}
+.home nav a {
+  color: #DCD3C7;
+}
+.home nav a:visited {
+  color: #DCD3C7;
+}
+.home .active {
+  color: #FFF9EE !important;
+}
 
   * {
     box-sizing: border-box;
@@ -189,9 +216,7 @@ nav>ul>li>a:active {
 
   main {
   padding-top: 133px;
-  width: 96%;
-  margin: 0 auto;
-  text-align: left;
+
 }
 
 #projects {
@@ -213,14 +238,14 @@ footer {
 #footer .h2  {
   text-align: center;
 }
-ul {
+#footer .ul {
   list-style-type: none;
   padding: 0;
 }
-ul > li {
+#footer .ul > li {
   display: inline-block;
 }
-ul> li> a> {
+#footer .a {
   display: inline-block;
   list-style: none;
   text-align: center;
@@ -231,8 +256,7 @@ ul> li> a> {
     text-align: center;
   }
 
-
-/* Layout styling prowater*/
-#my-photo {
-  position: relative;
+.full-width {
+  margin: 0 -8px;
 }
+/* Layout styling About*/
