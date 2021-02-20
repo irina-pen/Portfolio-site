@@ -12,6 +12,11 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #4D4A4A;
 }
+
+p {
+margin-top: 0.5em;
+margin-bottom: 1em;
+}
 .header-position {
   text-align: center;
 }
@@ -38,8 +43,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 500;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -53,6 +58,7 @@ h4 {
   font-size: 0.5em;
   font-weight: 400;
   display: block;
+  padding-top: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
@@ -94,10 +100,11 @@ a:active {
   text-decoration: none;
   text-align: center;
   padding: 16px 73px;
-  border-radius: 13px;
+  border-radius: 11px;
   transition: 0.2s background-color;
   box-shadow: 0px 6px 12px rgba(11, 1, 44, 0.28);
-  margin: 0 auto;
+margin-top: 16px;
+margin-bottom: 24px;
 }
 
 .button:hover {
@@ -109,7 +116,6 @@ a:active {
 }
 .button.contact {
   background-color: #FEFDF9;
-  padding: 16px, 32px;
   text-align: center;
   color: #4100F7 !important;
 }
@@ -121,7 +127,7 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 8px;
+  padding: 0 14px;
 }
 
 .row {
@@ -132,17 +138,23 @@ a:active {
 #projects .row {
   padding: 8px 0;
 }
-
+#projects h2 {
+  margin-top: 32px;
+  }
 #hero h1 {
   text-align: left;
 }
 
 .logo img {
-  padding: 15px 30px;
+  padding: 22px 32px;
   background: #ffffff;
 }
+.home .logo img {
+  background: transparent;
+  color: #FFF9EE;
+}
 .logo {
-  max-width: 200px;
+  max-width: 160px;
 }
 header {
   background-color: #FBF8F4;
@@ -155,14 +167,19 @@ header {
   position: fixed;
 }
 
+.home header {
+background: transparent;
+}
+.home main {
+  padding-top: 0;
+}
 nav {
   width: 100%;
-  text-transform: uppercase;
 }
 
 nav>ul {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 0.85em;
   padding: 0;
   margin: 0;
 }
@@ -171,7 +188,8 @@ nav > ul > li {
 }
 nav>ul>li>a {
   text-decoration: none;
-  padding: 0 8px;
+  text-transform: uppercase;
+  padding: 0 16px;
   font-weight: 400;
   color: #010936;
 }
@@ -214,11 +232,32 @@ nav>ul>li>a:active {
     width: 100%;
   }
 
-  main {
-  padding-top: 133px;
+  .home .hero {
+  background-image: url("../img/background1@1x.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 
 }
+.home .hero h1 {
+  background-color: rgba(30,46,58,0.63);
+  padding: 5em 14px 10em;
+  color: #FFF9EE;
+}
+.home header {
+  top: 0;
+}
+  main {
+  padding-top: 86px;
+  padding-bottom: 32px;
+}
 
+home main {
+padding-top: 0;
+}
+projects {
+  padding-top: 77px;
+}
 #projects {
   width: 100%;
   margin: 24px 0;
@@ -230,33 +269,121 @@ nav>ul>li>a:active {
 #projects .row {
   padding-bottom: 24px;
 }
-footer {
-  width: 100%;
-  background-color: rgba(255,255,255,11);
-  border: 1.5px solid #ffffff;
+
+  footer {
+    padding-top: 1em;
+  background-image: url("../img/background2@1x.jpg");
+  background color: #cccc;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-#footer .h2  {
+.mini-container {
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+background-color: rgba(255,255,255,0.11);
+border: 2px solid #fff;
+padding: 0 1em 0.5em;
+border-radius: 4px;
+}
+
+footer .h2  {
   text-align: center;
 }
-#footer .ul {
+footer ul {
   list-style-type: none;
   padding: 0;
 }
-#footer .ul > li {
+footer ul > li {
   display: inline-block;
+  margin: auto;
 }
-#footer .a {
-  display: inline-block;
-  list-style: none;
+
+footer {
   text-align: center;
-  padding: 8px;
-  width: 100%;
 }
   .copyright {
     text-align: center;
   }
 
 .full-width {
-  margin: 0 -8px;
+  margin: 0 -14px;
 }
-/* Layout styling About*/
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+#hero span {
+  display: block;
+}
+
+main {
+  padding-top: 98px;
+  padding-bottom: 32px;
+}
+
+body {
+font-size: 18px;
+}
+.col-md-6 {
+width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 16px;
+  margin-right: 16px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  text-align: left;
+}
+
+#about h1 {
+  margin-top: 0;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+about .picture {
+  float: right;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
