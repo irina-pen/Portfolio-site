@@ -374,15 +374,18 @@ footer ul > li {
   margin: auto;
   padding: 0 1em;
 }
-footer ul li .linkedin {
-  color: #0084B1 !important;
-}
-.behance {
-color: #ffffff;
+footer a .fa-linkedin {
+  color: #0084B1;
 }
 footer {
   text-align: center;
   font-size: 1.2em;
+}
+footer a .fa-dribbble-square {
+  color: #ED4989;
+}
+footer a .fa-behance-square {
+  color: black;
 }
   .copyright {
     text-align: center;
