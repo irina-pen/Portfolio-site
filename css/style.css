@@ -425,7 +425,7 @@ footer {
   border: 2px solid #fff;
   padding: 0.5 1em 1em;
   border-radius: 4px;
-  box-shadow: 0px 6px 15px rgba(26, 37, 57, 0.25);
+  box-shadow: 0px 18px 19px rgba(26, 37, 57, 0.15);
 }
 
 footer .h2 {
@@ -630,7 +630,6 @@ Large devices (1024px or larger)
 
   .about .button {
     margin-top: 2em;
-    margin-left: 4em;
   }
 
   .about .h3 {
