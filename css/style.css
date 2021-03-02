@@ -550,7 +550,6 @@ Medium devices (640px and larger)
   h2 {
     font-size: 2em;
     margin-bottom: 0.8em;
-    text-align: center;
   }
 
   about .h3 {
@@ -577,21 +576,18 @@ Medium devices (640px and larger)
   .prowater h2 {
     font-size: 1.8em;
   }
-
-  .prowater p {
-    margin-top: 1.5em;
-  }
+.prowater .button {
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-9 {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .col-lg-7 {
     width: 58.33%;
@@ -601,9 +597,7 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
-  .col-lg-3 {
-    width: 25%;
-  }
+
 
   .container {
     max-width: 1200px;
@@ -619,7 +613,11 @@ Large devices (1024px or larger)
   h2 {
     font-size: 2.5em;
   }
+.prowater h2 {
+  margin-top: 1.8em;
+  margin-bottom: 1em;
 
+}
   h3 {
     font-size: 1.5em;
   }
@@ -635,9 +633,20 @@ Large devices (1024px or larger)
   .about .h3 {
     margin-bottom: 2em;
   }
-
+.narrow-column {
+  max-width: 75%;
+  margin: 0 auto;
+}
+.button {
+  margin: 2em 0 2em;
+}
   .mini-container {
     max-width: 1141px;
+  }
+.prowater picture {
+  margin-top: 16px;
+}
+
   }
 }
 
