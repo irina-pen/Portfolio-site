@@ -33,7 +33,7 @@ h3 {
 h1 {
   font-size: 1.8em;
   font-weight: 700;
-  padding: 0.5em, 0;
+  padding: 0.5em 0;
 }
 
 h2 {
@@ -94,7 +94,8 @@ a:visited {
 }
 
 a:hover, a:focus {
-  color: #00F7A8;
+  opacity: 0.8;
+color: #4100F7;
 }
 
 a:active {
@@ -362,54 +363,10 @@ projects {
   text-align: center;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
 
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 footer {
-  padding: 1.5em 0 0.5em;
+  padding: 1.5em 0 0.2em;
   background-image: url("../img/background2@1x.jpg");
   background color: #cccc;
   background-size: cover;
@@ -423,7 +380,7 @@ footer {
   margin-right: auto;
   background-color: rgba(251, 248, 244, 0.45);
   border: 2px solid #fff;
-  padding: 0.5 1em 1em;
+  padding: 2em 1em 1em;
   border-radius: 4px;
   box-shadow: 0px 18px 19px rgba(26, 37, 57, 0.15);
 }
@@ -583,11 +540,14 @@ Medium devices (640px and larger)
   text-align: center;
 }
 }
-
+.negative-margin {
+  margin: 0 -18px;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
 
   .col-lg-7 {
     width: 58.33%;
@@ -597,7 +557,9 @@ Large devices (1024px or larger)
     width: 41.66%;
   }
 
-
+.col-lg-3 {
+  width: 25%;
+}
 
   .container {
     max-width: 1200px;
@@ -623,7 +585,7 @@ Large devices (1024px or larger)
   }
 
   .home .hero h1 {
-    padding: 3em 0 6em;
+    padding: 4em 0 6.5em;
   }
 
   .about .button {
@@ -647,7 +609,7 @@ Large devices (1024px or larger)
   margin-top: 16px;
 }
 
-  }
+
 }
 
 /* ==============================
