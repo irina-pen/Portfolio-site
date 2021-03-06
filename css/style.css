@@ -2,7 +2,7 @@
 primary-color (Blue): 2D00F7 */
 /* secondary-color (Green): 49FCC3 */
 body {
-  background-color: #FBF8F4;
+  background-color: #FBFAF8;
   font-family: 'Arimo', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -63,6 +63,7 @@ h5 {
   font-weight: 400;
   display: block;
   padding-top: 1em;
+  color: #E4DDCF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,7 +134,7 @@ a:active {
 }
 
 .button.contact {
-  background-color: #FEFDF9;
+  background-color: #FBFAF8;
   text-align: center;
   color: #4100F7 !important;
 }
@@ -175,7 +176,8 @@ a:active {
 
 .logo {
   display: inline-block;
-  padding: 1em;
+  padding: 1em 0;
+  max-width: 150px;
 }
 
 .logo a {
@@ -184,9 +186,8 @@ a:active {
 }
 
 header {
-  background-color: #FBF8F4;
+  background-color: #FBFAF8;
   display: block;
-  text-align: center;
   border: 0;
   padding: 0;
   margin: 0 auto;
@@ -198,7 +199,36 @@ header {
   padding-top: 0;
 }
 
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+ border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 nav {
+  display: inline-block;
   width: 100%;
 }
 
@@ -208,11 +238,6 @@ nav>ul {
   padding: 0;
   margin: 0;
 }
-
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   text-decoration: none;
   text-transform: uppercase;
@@ -260,26 +285,12 @@ ul {
 }
 
 /* animation for navigation*/
-nav .highlightTextOut .li {
-  color: rgba(255, 255, 255, 0.3);
-}
 
-nav .highlightTextOut li:before, nav.highlightTextIn li:before {
-  position: absolute;
-  color: #FFF;
-  top: 0px;
-  left: 0px;
-  padding: 10px;
-  overflow: hidden;
-  content: attr(alt);
-  transition: all 0.3s;
-  transform: scale(0.8);
-  opacity: 0;
-}
 
 nav.highlightTextOut li:hover:before, nav.highlightTextIn li:hover:before {
   transform: scale(1);
   opacity: 1;
+
 }
 
 * {
@@ -307,7 +318,7 @@ nav.highlightTextOut li:hover:before, nav.highlightTextIn li:hover:before {
 }
 
 .home .hero h1 {
-  padding: 5em 1em 13em;
+  padding: 5em 0em 13em;
   color: #FFF9EE;
   margin: 0;
   position: relative;
@@ -326,9 +337,25 @@ nav.highlightTextOut li:hover:before, nav.highlightTextIn li:hover:before {
   z-index: 999999999;
 }
 
+.column {
+    width: 100%;
+  }
+.home  .row {
+  margin: 8px -16px;
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.content {
+  background-color: white;
+  padding: 1em;
+}
 main {
-  padding-top: 86px;
-  padding-bottom: 32px;
+  padding-top: 24px;
 }
 
 home main {
@@ -433,25 +460,142 @@ footer a .fa-behance-square {
 .full-width {
   margin: 0 -16px;
 }
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #FBFAF8;
+}
 
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 2em 2em;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.7em;
+  width: 0.7em;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+ .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
+
+
+
+
 @media only screen and (min-width: 640px) {
   #projects .h2 {
     text-align: center;
   }
-
+.home .column {
+  float: left;
+    width: 50%;
+  }
+  .home .row > .column {
+    padding: 8px;
+  }
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 -1px;
   }
-
+  nav>ul>li {
+    display: inline-block;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+/*hidde nav bar on scrolling*/
+#myNavtoggle {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 
   #hero span {
     display: block;
@@ -461,7 +605,9 @@ Medium devices (640px and larger)
     padding-top: 98px;
     padding-bottom: 32px;
   }
-
+.home main {
+  padding-bottom: 0;
+}
   body {
     font-size: 18px;
   }
@@ -539,27 +685,34 @@ Medium devices (640px and larger)
 .text-center {
   text-align: center;
 }
-}
+
 .negative-margin {
   margin: 0 -18px;
+}
+
+.mySlides {
+  display: none;
+  padding: 2em 4em;
+  text-align: center;
+}
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
+  * Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
   .col-lg-7 {
     width: 58.33%;
   }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
 
-.col-lg-3 {
-  width: 25%;
-}
 
   .container {
     max-width: 1200px;

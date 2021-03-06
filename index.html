@@ -29,6 +29,7 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 			<div class="logo">
 				<a href="index.html">MALMOUCHE.</a>
 			</div>
@@ -36,9 +37,11 @@
 				<ul class="navigation">
 					<li><a href="#projects" class="active">Work</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</nav>
+		</div>
 		</div>
 	</header>
 
@@ -57,10 +60,11 @@
 		<div class="section" id="projects">
 			<div class="center-position container">
 				<h2> My projects </h2>
-		
+
 <div class="row">
-				<div class="col-md-6 col-lg-7">
+				<div class="column">
 					<!-- open first column (used for image) -->
+<div class="content">
 					<div class="full-width">
 						<picture>
 							<source srcset="img/prowater/prowater_cover@1x.jpg" media="(max-width:767px)">
@@ -68,21 +72,18 @@
 						</picture>
 					</div>
 
-				</div><!-- end first column -->
-				<div class="column col-md-6 col-lg-5">
 					<!-- open second column (used for text) -->
 					<h3> Prowater </h3>
 					<p> A seamless shopping experience by subscription </p>
 					<div class="button-position">
 						<a href="prowater.html" class="button">View project </a>
 					</div>
-
 				</div><!-- end second column -->
-			</div><!-- end row that holds (2) columns for project -->
+</div>
 
-			<div class="row">
+			<div class="column">
 				<!-- open row that holds (2) columns for project -->
-				<div class="col-md-6 col-lg-7">
+				<div class="content">
 					<!-- open first column (used for image) -->
 					<div class="full-width">
 						<picture>
@@ -90,21 +91,19 @@
 							<img src="img/savvy/savvy_cover@2x.jpg" alt="Savvy case study">
 						</picture>
 					</div>
-				</div><!-- end first column -->
 
-				<div class="column col-md-6 col-lg-5">
-					<!-- open second column (used for text) -->
 					<h3> Savvy </h3>
 					<p> Empowering to track and to control own budget effectively. </p>
 					<div class="button-position">
 						<a href="savvy.html" class="button"> View project </a>
 					</div>
-				</div> <!-- end second column -->
-			</div><!-- end row that holds (2) columns for project -->
 
-			<div class="row">
+				</div> <!-- end second column -->
+</div>
+
 				<!-- open row that holds (2) columns for project -->
-				<div class="col-md-6 col-lg-7">
+				<div class="column">
+					<div class="content">
 					<!-- open first column (used for image) -->
 					<div class="full-width">
 						<picture>
@@ -112,12 +111,9 @@
 							<img src="img/wtravel/wtravel_mockups@2x.jpg" alt="Wtravel case study">
 						</picture>
 					</div>
-				</div><!-- end first column -->
 
-				<div class="column col-md-6 col-lg-5">
-					<!-- open second column (used for text) -->
 					<h3> WTravel </h3>
-					<p> Helping young parents by providing best guidance inside out outside of the city. </p>
+					<p> Helping parents by providing guidance inside out outside of the city. </p>
 					<div class="button-position">
 						<a href="wtravel.html" class="button"> View project </a>
 					</div>
@@ -125,31 +121,28 @@
 				<!--end column-->
 			</div> <!-- end row that holds (2) columns for project -->
 
-			<div class="row">
-				<!-- open row that holds (2) columns for project -->
 
-				<div class="col-md-6 col-lg-7">
+
+				<div class="column">
+					<div class="content">
 					<!-- open first column (used for image) -->
-					<div class="full-width" <picture>
+					<div class="full-width">
+						<picture>
 						<source srcset="img/scratch/scratch_cover@1x.jpg" media="(max-width:767px)">
 						<img src="img/scratch/scratch_cover@2x.jpg" alt="Scratch case study">
 						</picture>
-
 					</div>
-				</div><!-- end first column -->
 
-				<div class="column col-md-6 col-lg-5">
-					<!-- open second column (used for text) -->
 					<h3> Scratch </h3>
 					<p> Keeping and organizing your notes in a clear and tidy way. </p>
 					<div class="button-position">
 						<a href="scratch.html" class="button"> View project </a>
 					</div>
+
 				</div>
 				<!--end column-->
 			</div><!-- end row that holds (2) columns for project -->
-		</div>
-		<!--end container-->
+
 		</div>
 		<!--end section-->
 		</div>
@@ -189,7 +182,8 @@
 
 
 	</footer>
-	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>

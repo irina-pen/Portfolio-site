@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -33,6 +33,7 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 			<div class="logo">
 				<a href="index.html">MALMOUCHE.</a>
 </div>
@@ -41,6 +42,7 @@
 						<li><a href="index.html#projects">Work</a></li>
 						<li><a href="about.html" class="active">About</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -50,11 +52,13 @@
 
 		<div class="section">
 			<div class="container">
+
 				<div class="row">
 					<div class="column col-md-6 col-lg-5">
 							<div class="header-position">
 						<h1> About </h1>
 					</div>
+
 					</div>
 					<div class="col-md-6 col-lg-7">
 						<div class="full-width">
@@ -63,12 +67,10 @@
 								<img src="img/photo-site@2x.jpg" alt="My Image">
 							</picture>
 						</div>
+
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="section">
-			<div class="container">
+
 
 				<div class="row">
 					<div class="column">
@@ -76,12 +78,14 @@
 		<h3>Inspired by human creation – visual arts, architecture, and fashion, the heartbeat behind my mission is to create meaningful user experiences through humanizing and aesthetifying digital products.</h3>
 </div>
 </div>
+
 <div class="row">
-<div class="column col-lg-7 negative-margin">
+<div class="column col-lg-7">
 	<div class="left-align">
 						<h2> My Story </h2>
 					</div>
-		<p>Artist turned UI designer. An academic background in Fine arts gives me an intrinsic understanding of composition and feeling of color. Experience in Research, Analyses, Project management, Script writing, and Public speaking has taught me to develop a project from idea to accomplished project. </p>
+					<div class="negative-margin">
+		<p>Artist turned UI designer. I used to draw, paint and research. My academic background in Fine arts gives me an intrinsic understanding of composition and feeling of color. Experience in Research, Analyses, Project curation, writing, and Public speaking has taught me to develop a project from idea to accomplished product. </p>
 
 			<p>Embracing the world. After moving from my home country Kazakhstan to Japan and now to France, travelling in Europe and US in between, I felt it was a time for me to put aside the theory and history of arts as my own work history and move to intangible, to digital, to creation. </p>
 
@@ -89,6 +93,7 @@
 
 			<p>Currently I am available for full-time roles in the South of France.</p>
 	</div>
+</div>
 					<div class="text-center column col-lg-5">
 											<a href="files/Malmouche-Irina-Resume.pdf" class="button" download>Download my CV</a>
 
@@ -147,10 +152,38 @@
 								<!--end of a row-->
 							</div>
 							<!--end section-->
-						</div>
+
+<br>
+
+							<div class="slideshow-container">
+								<div class="mySlides">
+										<h3>Testimonials</h3>
+							    <q>Irina was an excellent student at CareerFoundry. She picked up fast the lean product design approach and created professional UI designs by the end of the course. If you get the chance, work with her!</q>
+							    <p class="author">- Michael Alexander Holker, Senior Product Designer at KeyWe</p>
+							  </div>
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+		<h3>Testimonials</h3>
+    <q>I’d be happy to recommend Irina for any employers and teams as I am confident in her capabilities in design skills and the positive energy she brings in. She always shows her passion, a committed attitude, and openness to feedback, which makes collaboration work effective. In addition to this, her educational background both in Liberal Arts and Design is a great combination to come up with aesthetic design solutions. It was my pleasure working with her throughout her journey at CareerFoundry.</q>
+    <p class="author">- Nori Yamada, Product Designer and Consultant</p>
+  </div>
+
+
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 					</div>
 						<!--end container-->
-
+</div>
 
 	</main>
 	<!-- For the footer  -->
@@ -178,6 +211,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
