@@ -192,11 +192,15 @@ header {
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  position: fixed;
+  position: relative;
+  z-index: 999999;
 }
-
+.about .navtoggle li .icon {
+  color: #010C1A;
+}
 .home main {
   padding-top: 0;
+margin-top: -82px;
 }
 
 
@@ -221,6 +225,7 @@ header {
   top: 16px;
   font-size: 20px;
   padding-right: 0;
+  color: #FFF9EE;
 }
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
@@ -245,7 +250,9 @@ nav>ul>li>a {
   font-weight: 400;
   color: #010936;
 }
-
+nav .active {
+  background-color: transparent;
+}
 nav>ul>li>a:visited {
   color: #010936;
 }

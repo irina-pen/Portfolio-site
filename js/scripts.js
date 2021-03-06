@@ -1,10 +1,4 @@
-console.log("Hey! Welcome to my Portfolio Site")
 
-
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-x.className += ' responsive';
-}
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
@@ -18,9 +12,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myNavtoggle").style.top = "0";
+    document.getElementById("header").style.top = "0";
   } else {
-    document.getElementById("myNavtoggle").style.top = "-50px";
+    document.getElementById("header").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -47,7 +41,7 @@ function showSlides(n) {
       slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("active", "");
     }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
