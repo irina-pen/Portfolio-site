@@ -63,7 +63,6 @@ h2 {
 
 #projects h2 {
   margin-top: 1em;
-  margin-bottom: 1.5em;
 }
 
 #hero h1 {
@@ -239,6 +238,11 @@ header {
   background-color: rgba(34, 34, 34, 0.8);
 }
 
+
+.prowater .navtoggle li .icon {
+  color: #010C1A;
+}
+
 .about .navtoggle li .icon {
   color: #010C1A;
 }
@@ -252,13 +256,15 @@ header {
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 24px 0 32px;
 }
 
 .navtoggle.responsive li {
+  font-size: 1.2em;
   display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+
 }
 
 .navtoggle li .icon {
