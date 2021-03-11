@@ -246,7 +246,9 @@ header {
   top: 0;
   transition: all .3s ease;
 }
-
+.prowater .navtoggle.responsive {
+  background-color: #FBFAF8;
+}
 #header.hide {
   top: -100px;
 }
