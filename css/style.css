@@ -53,7 +53,7 @@ h3 {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.65em;
   font-weight: 700;
   padding: 0.5em 0;
 }
@@ -867,7 +867,7 @@ Large devices (1024px or larger)
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   h2 {
