@@ -262,7 +262,7 @@ header {
   background-color: rgba(34, 34, 34, 0.8);
 }
 .prowater .header.header-active {
-  background-color: #FBFAF8;
+  background-color: #FBFAF8 !important;
 }
 
 .prowater .navtoggle li .icon {
@@ -600,18 +600,7 @@ q {
 .author {
   color: cornflowerblue;
 }
-@keyframes color-change {
-  0% {fill: #black;}
-  50% {fill: #white;}
-  100% {fill: #FFF9EE;}
-}
-.home.hero h1 {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+
 /* The Overlay (background) */
 
  .navtoggle.responsive {
