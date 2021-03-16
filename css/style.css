@@ -352,8 +352,9 @@ nav>ul>li>a:active {
   color: #e2d9d0 !important;
 }
 .home nav ul li a:hover {
-  color: #fff9ee;
+  color: #fff9ee !important;
 }
+
 #hero {
   background-color: #ffe4c4;
   margin: 0;
