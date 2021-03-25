@@ -253,7 +253,7 @@ header {
 }
 
 .header.header-active {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: rgba(34, 34, 34, 0.9);
 }
 
 .prowater .header.header-active {
@@ -567,6 +567,7 @@ footer a .fa-behance-square {
   text-align: center;
   padding: 20px;
   background: #ddd;
+  margin-bottom: 40px;
 }
 
 /* The dots/bullets/indicators */
