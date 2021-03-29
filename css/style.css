@@ -282,7 +282,6 @@ header {
 }
 
 .navtoggle.responsive li {
-  font-size: 1.2em;
   display: block;
   padding: 20px 0;
 }
@@ -411,6 +410,9 @@ nav>ul>li>a:active {
 .content {
   background-color: white;
   padding: 1em;
+  border: 1px solid #ddd;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 main {
@@ -670,7 +672,6 @@ Medium devices (640px and larger)
 
   .navtoggle.responsive li {
     padding: 0;
-    font-size: 0.85em;
   }
 
   .navtoggle.responsive {
