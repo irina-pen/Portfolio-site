@@ -411,8 +411,6 @@ nav>ul>li>a:active {
   background-color: white;
   padding: 1em;
   border: 1px solid #ddd;
-  margin-right: 8px;
-  margin-bottom: 8px;
 }
 
 main {
@@ -860,6 +858,11 @@ Large devices (1024px or larger)
   .home .hero {
     height: 790px;
   }
+  .content {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
 }
 
 /* ==============================
