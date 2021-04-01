@@ -864,7 +864,9 @@ Large devices (1024px or larger)
     margin-right: 8px;
     margin-bottom: 8px;
   }
-
+nav>ul>li>a {
+  font-size: 0.9em;
+}
 }
 
 /* ==============================
