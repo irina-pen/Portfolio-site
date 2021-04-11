@@ -21,6 +21,10 @@ body {
   color: #4d4a4a;
 }
 
+strong {
+  font-weight: 700;
+}
+
 p {
   margin-top: 0.5em;
   margin-bottom: 1em;
