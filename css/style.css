@@ -454,7 +454,7 @@ projects {
 
 footer {
   padding: 1.5em 0 0.2em;
-  background-image: url("../img/background2@1x.jpg");
+  background-image: url("../img/contacts.jpg");
   background color: #cccc;
   background-size: cover;
   background-position: top;
@@ -465,13 +465,16 @@ footer {
   max-width: 670px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(251, 248, 244, 0.45);
+  background-color: rgba(0,0,0, 0.55);
   border: 2px solid #fff;
-  padding: 2em 1em 1em;
+  padding: 1em 1em 1em;
   border-radius: 4px;
   box-shadow: 0px 18px 19px rgba(26, 37, 57, 0.15);
+  color: #FFFAF6;
 }
-
+.mini-container h2 {
+  color: #DFD6C9;
+}
 footer .h2 {
   text-align: center;
 }
