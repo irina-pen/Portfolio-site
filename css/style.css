@@ -12,10 +12,11 @@ html {
 }
 body {
   background-color: #FBFAF8;
-  font-family: 'Arimo', sans-serif;
-  font-size: 16px;
+  font-family: 'Encode Sans', sans-serif;
+font-family: 'Marcellus SC', serif;
+  font-size: 18px;
   /* Sets the font size to 16px */
-  font-weight: 300;
+  font-weight: 400;
   /* Sets the font weight to 300 */
   line-height: 1.5em;
   /* Sets the line-height to 1.6 * the font-size */
@@ -24,10 +25,13 @@ body {
 
 p {
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  font-family: 'Encode Sans', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Marcellus SC', serif;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -38,9 +42,11 @@ h1 {
 
 .home .hero h1 span {
   font-size: 0.5em;
-  font-weight: 400;
+  font-family: 'Encode Sans', sans-serif;
+
+  font-weight: 200;
   display: block;
-  padding-top: 1em;
+  padding-top: 1.5em;
   color: #E4DDCF;
 }
 
@@ -53,14 +59,13 @@ h3 {
 }
 
 h1 {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 400;
   padding: 0.5em 0;
 }
 
 h2 {
   font-size: 1.5em;
-  font-weight: 700;
 }
 
 #projects h2 {
@@ -130,7 +135,8 @@ a:visited {
 
 a:hover, a:focus {
   opacity: 0.8;
-  color: #4100F7;
+  background-color: #grey;
+  color: #000000;
 }
 
 a:active {
@@ -144,16 +150,14 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #4100F7;
-  color: #FCFFF1 !important;
-  font-weight: 500;
+  font-family: 'Encode Sans', sans-serif;
+  background-color: #000000;
+  color: #ECECEC !important;
+  font-weight: 400;
   text-decoration: none;
   text-align: center;
-  padding: 16px 63px;
-  border-radius: 11px;
-  /*
-  transition: 0.2s opacity;
-  */
+  padding: 16px 32px;
+  border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 24px;
   transition: all 0.5s;
@@ -165,6 +169,7 @@ a:active {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+
 }
 
 .button span:after {
@@ -178,6 +183,7 @@ a:active {
 
 .button:hover span {
   padding-right: 25px;
+
 }
 
 .button:hover span:after {
@@ -198,11 +204,11 @@ a:active {
 .button.contact {
   background-color: #FBFAF8;
   text-align: center;
-  color: #4100F7 !important;
+  color: #000000 !important;
 }
 
 .button.contact:hover {
-  background-color: #4100F7;
+  background-color: #000000;
   color: #FCFFF1 !important;
 }
 .btn-outlined {
@@ -216,8 +222,8 @@ cursor: pointer;
 border-radius: 4px;
 }
 .btn-outlined:hover {
-  background-color: #4100F7;
-  color: #FFF9EE !important;
+  background-color: #FFF9EE;
+  color: #000000 !important;
 }
 .about .btn-outlined {
   border: 2px solid rgba(1,9,54,0.6) !important;
@@ -898,11 +904,11 @@ Large devices (1024px or larger)
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 5em;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   .prowater h2 {
