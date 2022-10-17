@@ -486,7 +486,7 @@ projects {
 
 footer {
   padding: 1.5em 0 0.2em;
-  background-image: url("../img/contacts@2x.jpg");
+  background-image: url("../img/footer@2x.jpg");
   background color: #cccc;
   background-size: cover;
   background-position: top;
@@ -499,7 +499,7 @@ footer {
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 3em;
-  background-color: rgba(0,0,0, 0.55);
+  background-color: rgba(0,0,0, 0.65);
   border: 2px solid #fff;
   padding: 1em 1em 1em;
   border-radius: 4px;
@@ -543,6 +543,7 @@ footer a .fa-behance-square {
   color: beige;
   font-size: 1.3em;
 }
+
 
 .copyright {
   text-align: center;
